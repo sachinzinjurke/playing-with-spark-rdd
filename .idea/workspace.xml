@@ -37,9 +37,9 @@
       <recent name="com.spark.tutorial.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SparkPairRddGroupByExample">
-    <configuration name="SparkMapping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkMapping" />
+  <component name="RunManager" selected="Application.SparkFlatMapExample">
+    <configuration name="SparkFlatMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkFlatMapExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparkFlatMapExample" />
         <item itemvalue="Application.SparkPairRddGroupByExample" />
         <item itemvalue="Application.SparkPairRddRefactoredExample" />
         <item itemvalue="Application.SparkPairRddExample" />
         <item itemvalue="Application.SparkTupleExample" />
-        <item itemvalue="Application.SparkMapping" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +174,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom" timestamp="1612381996381">
+    <state width="1237" height="262" key="GridCell.Tab.0.bottom" timestamp="1612382884830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612381996381" />
-    <state width="1237" height="262" key="GridCell.Tab.0.center" timestamp="1612381996380">
+    <state width="1237" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
+    <state width="1237" height="262" key="GridCell.Tab.0.center" timestamp="1612382884830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612381996380" />
-    <state width="1237" height="262" key="GridCell.Tab.0.left" timestamp="1612381996380">
+    <state width="1237" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
+    <state width="1237" height="262" key="GridCell.Tab.0.left" timestamp="1612382884829">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612381996380" />
-    <state width="1237" height="262" key="GridCell.Tab.0.right" timestamp="1612381996381">
+    <state width="1237" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612382884829" />
+    <state width="1237" height="262" key="GridCell.Tab.0.right" timestamp="1612382884830">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612381996381" />
+    <state width="1237" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1612350356769">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
