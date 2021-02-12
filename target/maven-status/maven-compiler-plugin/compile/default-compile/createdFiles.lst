@@ -1,9 +1,0 @@
-com\spark\tutorial\rdd\SparkFlatMapExample.class
-com\spark\tutorial\rdd\SparkPairRddRefactoredExample.class
-com\spark\tutorial\rdd\SparkMapping.class
-com\spark\tutorial\rdd\SparkPairRddExample.class
-com\spark\tutorial\rdd\SparkHelloWorld.class
-com\spark\tutorial\rdd\SparkReadingFileExample.class
-com\spark\tutorial\rdd\SparkTupleExample.class
-com\spark\tutorial\rdd\SparkPairRddGroupByExample.class
-com\spark\tutorial\rdd\SparkDataSetExample.class
