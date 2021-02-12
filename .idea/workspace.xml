@@ -56,7 +56,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.SparkDataSetGroupByExample">
+  <component name="RunManager" selected="Application.SparkDataSetWithUserDefinedFunctionExample">
     <configuration name="SparkDataSetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetExample" />
       <module name="playing-with-spark-rdd" />
@@ -96,6 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SparkDataSetWithUserDefinedFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetWithUserDefinedFunctionExample" />
+      <module name="playing-with-spark-rdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SparkDataSetWithViewExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetWithViewExample" />
       <module name="playing-with-spark-rdd" />
@@ -109,33 +122,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkPairRddGroupByExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkPairRddGroupByExample" />
-      <module name="playing-with-spark-rdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.rdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.SparkDataSetExample" />
-      <item itemvalue="Application.SparkPairRddGroupByExample" />
       <item itemvalue="Application.SparkDataSetWithViewExample" />
       <item itemvalue="Application.SparkDataSetStructTypeExample" />
       <item itemvalue="Application.SparkDataSetGroupByExample" />
+      <item itemvalue="Application.SparkDataSetWithUserDefinedFunctionExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SparkDataSetWithUserDefinedFunctionExample" />
         <item itemvalue="Application.SparkDataSetGroupByExample" />
         <item itemvalue="Application.SparkDataSetStructTypeExample" />
         <item itemvalue="Application.SparkDataSetWithViewExample" />
         <item itemvalue="Application.SparkDataSetExample" />
-        <item itemvalue="Application.SparkPairRddGroupByExample" />
       </list>
     </recent_temporary>
   </component>
@@ -157,22 +157,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1613148889885" />
-    <state width="1237" height="85" key="GridCell.Tab.0.bottom" timestamp="1613160201437">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1613163542989">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="85" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
-    <state width="1237" height="85" key="GridCell.Tab.0.center" timestamp="1613160201437">
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1613163542989">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="85" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
-    <state width="1237" height="85" key="GridCell.Tab.0.left" timestamp="1613160201437">
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1613163542989">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="85" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
-    <state width="1237" height="85" key="GridCell.Tab.0.right" timestamp="1613160201437">
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1613163542989">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="85" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1613142942686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
