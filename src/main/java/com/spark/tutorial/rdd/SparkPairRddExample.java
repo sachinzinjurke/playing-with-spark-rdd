@@ -6,6 +6,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.Function2;
 import scala.Tuple2;
 
 import java.util.ArrayList;
@@ -33,7 +34,11 @@ public class SparkPairRddExample {
             String[] split = msg.split(":");
             return new Tuple2<>(split[0], 1L);
         });
-        JavaPairRDD<String, Long> sumRdd = msgPairRdd.reduceByKey((val1, val2) -> val1 + val2);
+        Function2<Long,Long,Long> reduceFunction=(val1, val2) ->{
+            System.out.println("Got Val1 : " + val1 + " Val2 : " + val2);
+            return val1 + val2;
+        } ;
+        JavaPairRDD<String, Long> sumRdd = msgPairRdd.reduceByKey(reduceFunction);
         sumRdd.foreach(tuple->System.out.println(tuple._1 + " has " + tuple._2 + " instances"));
 
         context.close();

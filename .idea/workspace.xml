@@ -17,6 +17,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ny5ayROgH7DxjLTYTfE0krQD3s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/subtitles" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -33,13 +41,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.tutorial.ds" />
+      <recent name="com.spark.tutorial" />
       <recent name="com.spark.tutorial.rdd" />
       <recent name="com.spark.tutorial.demo" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\spark-projects\spark-tutorial\src\main\resources\subtitles" />
+      <recent name="C:\spark-projects\spark-tutorial\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SparkFlatMapExample">
-    <configuration name="SparkFlatMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkFlatMapExample" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SparkDataSetGroupByExample">
+    <configuration name="SparkDataSetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
@@ -51,12 +70,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkPairRddExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkPairRddExample" />
+    <configuration name="SparkDataSetGroupByExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetGroupByExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.rdd.*" />
+          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkDataSetStructTypeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetStructTypeExample" />
+      <module name="playing-with-spark-rdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkDataSetWithViewExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetWithViewExample" />
+      <module name="playing-with-spark-rdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,86 +122,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkPairRddRefactoredExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkPairRddRefactoredExample" />
-      <module name="playing-with-spark-rdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.rdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparkTupleExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkTupleExample" />
-      <module name="playing-with-spark-rdd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.rdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="playing-with-spark-rdd" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="playing-with-spark-rdd" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.SparkDataSetExample" />
+      <item itemvalue="Application.SparkPairRddGroupByExample" />
+      <item itemvalue="Application.SparkDataSetWithViewExample" />
+      <item itemvalue="Application.SparkDataSetStructTypeExample" />
+      <item itemvalue="Application.SparkDataSetGroupByExample" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SparkFlatMapExample" />
+        <item itemvalue="Application.SparkDataSetGroupByExample" />
+        <item itemvalue="Application.SparkDataSetStructTypeExample" />
+        <item itemvalue="Application.SparkDataSetWithViewExample" />
+        <item itemvalue="Application.SparkDataSetExample" />
         <item itemvalue="Application.SparkPairRddGroupByExample" />
-        <item itemvalue="Application.SparkPairRddRefactoredExample" />
-        <item itemvalue="Application.SparkPairRddExample" />
-        <item itemvalue="Application.SparkTupleExample" />
       </list>
     </recent_temporary>
   </component>
@@ -174,25 +153,41 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom" timestamp="1612382884830">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613148889885">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
-    <state width="1237" height="262" key="GridCell.Tab.0.center" timestamp="1612382884830">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1613148889885" />
+    <state width="1237" height="85" key="GridCell.Tab.0.bottom" timestamp="1613160201437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
-    <state width="1237" height="262" key="GridCell.Tab.0.left" timestamp="1612382884829">
+    <state width="1237" height="85" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
+    <state width="1237" height="85" key="GridCell.Tab.0.center" timestamp="1613160201437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612382884829" />
-    <state width="1237" height="262" key="GridCell.Tab.0.right" timestamp="1612382884830">
+    <state width="1237" height="85" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
+    <state width="1237" height="85" key="GridCell.Tab.0.left" timestamp="1613160201437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="262" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612382884830" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1612350356769">
+    <state width="1237" height="85" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
+    <state width="1237" height="85" key="GridCell.Tab.0.right" timestamp="1613160201437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1612350356769" />
+    <state width="1237" height="85" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613160201437" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1613142942686">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1613142942686" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1613160296562">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1613160296562" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1613146645793">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1613146645793" />
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1613146931364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1613146931364" />
   </component>
 </project>
