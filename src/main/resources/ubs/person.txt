@@ -1,0 +1,5 @@
+sachin,zinjurke,10
+priyanka,mokashi,8
+abhishek,singhal,20
+shweta,kumar,30
+jiledar,bind,40

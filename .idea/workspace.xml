@@ -34,13 +34,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/subtitles" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.tutorial.ubs" />
       <recent name="com.spark.tutorial.ds" />
       <recent name="com.spark.tutorial" />
       <recent name="com.spark.tutorial.rdd" />
@@ -56,9 +57,9 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.SparkDataSetWithUserDefinedFunctionExample">
-    <configuration name="SparkDataSetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetExample" />
+  <component name="RunManager" selected="Application.UbsRddEncoderExample">
+    <configuration name="SparkHelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.rdd.SparkHelloWorld" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
@@ -70,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkDataSetGroupByExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetGroupByExample" />
+    <configuration name="UbsDsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ubs.UbsDsExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="PATTERN" value="com.spark.tutorial.ubs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkDataSetStructTypeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetStructTypeExample" />
+    <configuration name="UbsDsFromTextExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ubs.UbsDsFromTextExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="PATTERN" value="com.spark.tutorial.ubs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkDataSetWithUserDefinedFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetWithUserDefinedFunctionExample" />
+    <configuration name="UbsRddEncoderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ubs.UbsRddEncoderExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="PATTERN" value="com.spark.tutorial.ubs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkDataSetWithViewExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ds.SparkDataSetWithViewExample" />
+    <configuration name="UbsRddExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.tutorial.ubs.UbsRddExample" />
       <module name="playing-with-spark-rdd" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spark.tutorial.ds.*" />
+          <option name="PATTERN" value="com.spark.tutorial.ubs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,19 +124,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SparkDataSetExample" />
-      <item itemvalue="Application.SparkDataSetWithViewExample" />
-      <item itemvalue="Application.SparkDataSetStructTypeExample" />
-      <item itemvalue="Application.SparkDataSetGroupByExample" />
-      <item itemvalue="Application.SparkDataSetWithUserDefinedFunctionExample" />
+      <item itemvalue="Application.SparkHelloWorld" />
+      <item itemvalue="Application.UbsDsExample" />
+      <item itemvalue="Application.UbsDsFromTextExample" />
+      <item itemvalue="Application.UbsRddExample" />
+      <item itemvalue="Application.UbsRddEncoderExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SparkDataSetWithUserDefinedFunctionExample" />
-        <item itemvalue="Application.SparkDataSetGroupByExample" />
-        <item itemvalue="Application.SparkDataSetStructTypeExample" />
-        <item itemvalue="Application.SparkDataSetWithViewExample" />
-        <item itemvalue="Application.SparkDataSetExample" />
+        <item itemvalue="Application.UbsRddEncoderExample" />
+        <item itemvalue="Application.UbsRddExample" />
+        <item itemvalue="Application.UbsDsFromTextExample" />
+        <item itemvalue="Application.UbsDsExample" />
+        <item itemvalue="Application.SparkHelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -153,41 +154,61 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613148889885">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614759461103">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1613148889885" />
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1613163542989">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1614759461103" />
+    <state x="244" y="145" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615913409801">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
-    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1613163542989">
+    <state x="244" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1615913409801" />
+    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser" timestamp="1615921665148">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
-    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1613163542989">
+    <state x="446" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1615921665148" />
+    <state x="421" y="59" key="FileChooserDialogImpl" timestamp="1615622862131">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
-    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1613163542989">
+    <state x="421" y="59" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615622862131" />
+    <state width="1237" height="212" key="GridCell.Tab.0.bottom" timestamp="1615922877483">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1613163542989" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1613142942686">
+    <state width="1237" height="212" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615922877483" />
+    <state width="1237" height="212" key="GridCell.Tab.0.center" timestamp="1615922877483">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1613142942686" />
+    <state width="1237" height="212" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615922877483" />
+    <state width="1237" height="212" key="GridCell.Tab.0.left" timestamp="1615922877483">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615922877483" />
+    <state width="1237" height="212" key="GridCell.Tab.0.right" timestamp="1615922877483">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615922877483" />
+    <state x="316" y="41" key="NewModule_or_Project.wizard" timestamp="1615622869936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="316" y="41" key="NewModule_or_Project.wizard/0.0.1280.680@0.0.1280.680" timestamp="1615622869936" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1613758405065">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1613758405065" />
     <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1613160296562">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1613160296562" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1613146645793">
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1615909058774">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1613146645793" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1615909058774" />
     <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1613146931364">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1613146931364" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1615912436095">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1615912436095" />
   </component>
 </project>
