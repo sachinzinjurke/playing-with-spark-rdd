@@ -36,7 +36,7 @@ public class UbsRddEncoderExample {
         JavaRDD<Person> personRDD = context.parallelize(personList);
 
         //JavaRDD<Row> personRowRDD = personRDD.map(p -> RowFactory.create(p.getName(), p.getSurname(), p.getAge(),"location"));
-        Dataset<Row> personDS = spark.createDataFrame(personRDD, Person.class);
+        Dataset<Row> personDS = spark.createDataFrame(personRDD, Person.class).coalesce(1);
         ExpressionEncoder<Row> encoder = RowEncoder.apply(StructUtil.personSchema);
 
        // personDS.show();
