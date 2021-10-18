@@ -13,7 +13,9 @@ import org.apache.spark.sql.types.DataTypes;
 import org.apache.spark.sql.types.StructField;
 import org.apache.spark.sql.types.StructType;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -30,7 +32,7 @@ public class UbsRddExample {
 
         List<Person> personList=new ArrayList<>();
         for(int i=0;i<10;i++){
-            Person p=new Person("Name-" + i,"Surname-"+i ,i);
+            Person p=new Person("Name-" + i,"Surname-"+i ,i,new BigDecimal(Math.random()));
             personList.add(p);
         }
 

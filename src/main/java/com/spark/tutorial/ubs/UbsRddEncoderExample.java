@@ -11,8 +11,11 @@ import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.catalyst.encoders.ExpressionEncoder;
 import org.apache.spark.sql.catalyst.encoders.RowEncoder;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 
 public class UbsRddEncoderExample {
@@ -27,8 +30,8 @@ public class UbsRddEncoderExample {
                 .getOrCreate();
 
         List<Person> personList=new ArrayList<>();
-        for(int i=0;i<10;i++){
-            Person p=new Person("Name-" + i,"Surname-"+i ,i);
+        for(int i=7;i<17;i++){
+            Person p=new Person("Name-" + i,"Surname-"+i ,i,getRandomNumber(i));
             personList.add(p);
         }
 
@@ -44,11 +47,20 @@ public class UbsRddEncoderExample {
 
         System.out.println("Schema Create :: " + StructUtil.personSchema);
         //Dataset<Row> ds = spark.createDataFrame(personRowRDD, StructUtil.personSchema);
-        personWithLocationDS.coalesce(1).write().option("header","true").csv("src/main/resources/ubs/rdd/encoder/personOut.txt");
+        personWithLocationDS.coalesce(1).write().option("header","true").csv("src/main/resources/ubs/rdd/encoder/");
         personWithLocationDS.show();
 
        // ds.toJavaRDD().saveAsTextFile("src/main/resources/ubs/out/rdd/rddPerson.txt");
        // System.out.println(rowList);
         spark.close();
+    }
+
+    public static BigDecimal getRandomNumber(int range) {
+        BigDecimal max = new BigDecimal(range);
+        BigDecimal randFromDouble = new BigDecimal(Math.random());
+        BigDecimal actualRandomDec = randFromDouble.multiply(max);
+        actualRandomDec = actualRandomDec
+                .setScale(2, BigDecimal.ROUND_DOWN);
+        return actualRandomDec;
     }
 }

@@ -13,6 +13,8 @@ public class StructUtil {
             new StructField("Name", DataTypes.StringType, false, Metadata.empty()),
             new StructField("Surname", DataTypes.StringType, false, Metadata.empty()),
             new StructField("Age", DataTypes.IntegerType, false, Metadata.empty()),
+            new StructField("Salary", DataTypes.StringType, true, Metadata.empty()),
+            new StructField("BirthDate", DataTypes.StringType, false, Metadata.empty()),
             new StructField("Location", DataTypes.StringType, false, Metadata.empty()),
     });
 }
