@@ -28,7 +28,8 @@ public class SparkTextFileStucturedStreamingExample {
                 .add("emp Id", DataTypes.StringType)
                 .add("empName", DataTypes.StringType)
                 .add("department", DataTypes.StringType)
-                .add("Join date", DataTypes.StringType);
+                .add("Join date", DataTypes.StringType)
+                .add("Filter Reason", DataTypes.StringType);
 
         //build the streaming data reader from the file source, specifying csv file format
         Dataset<Row> rawData = spark
@@ -50,7 +51,8 @@ public class SparkTextFileStucturedStreamingExample {
         Dataset<Row> dateDs = rawData
                 .withColumn("processing_ts", to_utc_timestamp(to_timestamp(col("Join date"), "yyyy/MM/dd HH:mm:ss"), "UTC"))
                 .withColumn("processing_ts_1", to_timestamp(col("Join date"), "yyyy/MM/dd HH:mm:ss"))
-                .withColumn("master_id", lit("8"));
+                .withColumn("master_id", lit("8"))
+                .filter(col("Filter Reason").isNull());
 
         Dataset<Row> filter = rawData.filter(col("empName").equalTo("Sachin"));
         //write stream to output console with update mode as data is being aggregated
