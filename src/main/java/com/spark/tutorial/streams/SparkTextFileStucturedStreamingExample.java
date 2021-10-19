@@ -14,6 +14,8 @@ import org.apache.spark.sql.types.StructType;
 
 import java.util.concurrent.TimeoutException;
 
+import static org.apache.spark.sql.functions.*;
+
 public class SparkTextFileStucturedStreamingExample {
     public static void main(String[] args) throws StreamingQueryException, TimeoutException {
         Logger.getLogger("org.apache").setLevel(Level.WARN);
@@ -23,9 +25,10 @@ public class SparkTextFileStucturedStreamingExample {
 
         //define schema type of file data source
         StructType schema = new StructType()
-                .add("empId", DataTypes.StringType)
+                .add("emp Id", DataTypes.StringType)
                 .add("empName", DataTypes.StringType)
-                .add("department", DataTypes.StringType);
+                .add("department", DataTypes.StringType)
+                .add("Join date", DataTypes.StringType);
 
         //build the streaming data reader from the file source, specifying csv file format
         Dataset<Row> rawData = spark
@@ -44,9 +47,14 @@ public class SparkTextFileStucturedStreamingExample {
         //count of employees grouping by department
         //Dataset<Row> result = spark.sql("select count(*), department from  empData group by department");
 
+        Dataset<Row> dateDs = rawData
+                .withColumn("processing_ts", to_utc_timestamp(to_timestamp(col("Join date"), "yyyy/MM/dd HH:mm:ss"), "UTC"))
+                .withColumn("processing_ts_1", to_timestamp(col("Join date"), "yyyy/MM/dd HH:mm:ss"))
+                .withColumn("master_id", lit("8"));
 
+        Dataset<Row> filter = rawData.filter(col("empName").equalTo("Sachin"));
         //write stream to output console with update mode as data is being aggregated
-        StreamingQuery query = rawData
+        StreamingQuery query = dateDs
                 .writeStream()
                 .format("console")
                 .outputMode(OutputMode.Update())
