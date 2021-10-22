@@ -23,7 +23,7 @@ public class EmployeePartitioner implements ForeachPartitionFunction<Row> {
 
         Inventory p = new Inventory();
         p.setInventoryId(row.getAs("empId"));
-        p.setVersion(row.getAs("version"));
+        p.setVersion(row.getAs("Version"));
         p.setTs(row.getAs("processing_ts_1"));
         p.setGpnId(row.getAs("GPN"));
         p.setMasterId(row.getAs("master_id"));

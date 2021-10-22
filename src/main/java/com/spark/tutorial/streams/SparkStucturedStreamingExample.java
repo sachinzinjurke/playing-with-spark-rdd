@@ -57,7 +57,7 @@ public class SparkStucturedStreamingExample {
         StreamingQuery query;
         query = rawData
                 .writeStream()
-                .outputMode(OutputMode.Update())
+                .outputMode(OutputMode.Append())
                 .foreachBatch(new MorForEachBatch())
                 .start();
         query.awaitTermination();
